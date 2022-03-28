@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    }
+    
+    
+    
+    
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f4f5;
+        
+    
+        }
+        body > div{
+            /* cho  ra giữa trang */
+            margin: auto;
+    
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 12px 48px;
+            border-radius: 50px;
+            cursor: pointer;
+            min-width: 120px;
+            transition: opacity 0.2s ease;
+          }
+          .btn--success {
+            background-color: #71be34;
+          }
+          .btn--danger {
+            background-color: #ff623d;
+          }
+        #toast{
+
+            position: fixed;
+            top: 32px;
+            right: 32px;
+        
+        
+        }
+        .toast{
+    
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 2px; 
+            padding: 20px 0;
+            border-left: 4px solid;
+            /* transform translate x cho nó ẩn hết sang 1 bên ,bình thường
+            100% nó sẽ ẩn sang phải hết,nhưng ở #toast có right = 32px nên
+            phải cộng với 32px nữa nó mới ẳn hết */
+            /* transform: translateX(calc(100% + 32px)); */
+            animation: slideInLeft ease .5s ,fading linear 1s 2s forwards;
+        }
+        @keyframes slideInLeft{
+            from{
+                opacity: 0;
+                transform: translateX(calc(100% + 32px));
+            }
+            to{
+
+                transform: translateX(0);
+                opacity: 1;
+            }
+        
+        }
+        @keyframes fading{
+            to{
+                opacity: 0;
+
+            }
+
+        }
+        .toast + .toast {
+    
+            margin-top: 12px;
+    
+        }
+        .toast__icon{
+            font-size: 20px;
+            cursor: pointer;
+    
+    
+        }
+        .toast__body{
+    
+        }
+        .toast__title{
+    
+            font-size: 16px;
+            font-weight: 600;
+            color:#333;
+    
+        }
+        .toast__msg{
+            font-size: 14x;
+            margin-top: 4px;
+        }
+        .toast__close{
+    
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+    
+        }
+        .toast__body{
+            flex-grow: 1;
+        }
+        .toast--SUCCESS{
+            border-color:#47d764 ;
+        }
+        .toast--SUCCESS .toast__icon{
+            color:#47d764;
+        }
+        .toast--INFO{
+            border-color:#2f86eb ;
+        }
+        .toast--INFO .toast__icon{
+            color:#2f86eb;
+        }
+        .toast--WARNING{
+            border-color:#ffc021 ;
+        }
+        .toast--WARNING .toast__icon{
+            color:#ffc021;
+        }
+        .toast--ERROR{
+    
+            border-color:#ff623d ;
+        }
+        .toast--ERROR .toast__icon{
+            color:#ff623d;
+        }
+

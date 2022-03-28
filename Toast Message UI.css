@@ -1,0 +1,93 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;    
+}
+
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f5;
+    
+
+    }
+    body > div{
+        /* cho  ra giữa trang */
+        margin: auto;
+
+    }
+    .toast{
+
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 2px; 
+        padding: 20px 0;
+        border-left: 4px solid;
+         
+        
+    }
+    .toast + .toast {
+
+        margin-top: 12px;
+
+    }
+    .toast__icon{
+        font-size: 20px;
+        cursor: pointer;
+
+
+    }
+    .toast__body{
+
+    }
+    .toast__title{
+
+        font-size: 16px;
+        font-weight: 600;
+        color:#333;
+
+    }
+    .toast__msg{
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    .toast__close{
+
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+
+    }
+    .toast__body{
+        flex-grow: 1;
+    }
+    .toast--SUCCESS{
+        border-color:#47d764 ;
+    }
+    .toast--SUCCESS .toast__icon{
+        color:#47d764;
+    }
+    .toast--INFO{
+        border-color:#2f86eb ;
+    }
+    .toast--INFO .toast__icon{
+        color:#2f86eb;
+    }
+    .toast--WARNING{
+        border-color:#ffc021 ;
+    }
+    .toast--WARNING .toast__icon{
+        color:#ffc021;
+    }
+    .toast--ERROR{
+
+        border-color:#ff623d ;
+    }
+    .toast--ERROR .toast__icon{
+        color:#ff623d;
+    }

@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body > div{
+margin: auto;
+
+}
+
+.btn{
+    /* display inline cho các item đang nằm ngang chuyển thành dọc */
+   display: inline-block; 
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: opacity 0.2s ease;
+  user-select: none;
+  color: #fff;
+  padding:12px 48px;
+  /* dùng để tạo viền cong cho button */
+  border-radius: 50px;
+  /* dùng cursor pointer để tạo hình bàn tay khi chỉ vào button */
+  cursor: pointer;
+  /* chiều rộng tối thiểu của button là 120px */
+  min-width: 120px;
+  /* transiston dùng để thuộc tính nó thay đổi theo thời gian của mình đặt */
+  transition:opacity 0.5s ease ;
+}
+/* CSS được cho 2 tk đứng sau như btn warn và danger */
+.btn:hover{
+    /* opacity là  làm độ đục của bàn tay */
+    opacity: 0.8;
+}
+.btn + .btn{
+
+    margin-left: 16px;
+
+}
+.btn--success{
+    background-color: #71be34;
+
+
+}
+.btn--warn{
+    background-color: #ffb702;
+
+
+}
+.btn--danger{
+
+    background-color: #ff623d;
+
+}
+.btn--disable{
+
+    opacity: 0.5 !important;
+    cursor: default;
+
+}
+.btn--size-l{
+
+    padding: 16px 56px;
+
+}
+.btn--size-s{
+
+    padding: 8px 40px;
+
+}

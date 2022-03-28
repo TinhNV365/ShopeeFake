@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>4 months are learning HTML,CSS</title>
+       
+     <meta charset="utf-8">
+    <style>
+        html,body{
+
+            margin: 0;
+
+        }
+         .box{
+            width: 100px;
+            height: 100px;
+            background:pink;
+
+        }
+        .box::after{
+
+            content:attr(data) ;
+
+        }
+        /* dùng kiểu"("attr(href)")" để lấy cặp ngoặc() khi in ra */
+        a::after{
+            content:"("attr(href)")" ;
+
+        }
+
+    </style>
+    
+    
+    </head>
+
+    <body>
+        <div class ="box" data="Đây là BOX"></div>
+        <!-- dùng lớp giả a::after và dùng funtions "attr()"để khi thay đổi gì ở đường dẫn nó sẽ thay đổi luôn và chỉ phải sửa 1 chỗ -->
+        <a href="https://fullstack.edu.vn.net">Hoc Lap Trinh</a>
+        <h1 style = "color:red">FIGHTING FIGHTING!</h1>
+
+
+    </body>
+
+    </html>

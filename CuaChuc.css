@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url('https://vcdn-sohoa.vnecdn.net/2019/10/02/500x250-logo-1807-1570002416.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.list{
+   
+    min-height: 42px;
+    background-color: #49c1a2;
+    display: flex; 
+    justify-content: space-between ;
+    cursor: pointer;
+}
+.list-item{
+    padding-left: 0; 
+    margin: auto 16px;
+}
+.item{
+    color:white;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}

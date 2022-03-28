@@ -1,0 +1,18 @@
+/* lớp giả root được gọi là global(toàn cục,ở mọi nơi*/
+
+:root {
+
+    --color:red;
+}
+h1{
+    /* --mycolor:green;kiểu này được gọi là local giành cho mình nó */
+    color: var(--mycolor);
+
+}
+h3{
+
+    color:var(--color);
+
+
+
+}
